@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: url('술.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.distillery {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+}
+
+.distillery h2 {
+    margin-bottom: 15px;
+}
+
+.distillery img {
+    width: 400px;
+    height: 400px;
+    border-radius: 5px;
+}
+
+.distillery p {
+    margin-top: 10px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+    .distillery {
+        width: 45%;
+    }
+
+    .distilley img {
+        max-width: 30%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .distillery {
+        width: 100%;
+    }
+
+    .distilley img {
+        max-width: 100%;
+        height: auto;
+    }
+}
