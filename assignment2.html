@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        .container {
+            overflow: hidden;
+        }
+
+        .box {
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            float: left;
+            margin: 10px;
+        }
+
+        .image {
+            float: left;
+            margin: 10px;
+        }
+
+        .image img {
+            width: 250px;
+            height: 250px;
+            display: block;
+        }
+
+        .text {
+            margin: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .box, .image, .text {
+                float: none;
+                width: 200px;
+                height: 200px;
+                margin: 10px auto;
+            }
+
+            .image img {
+                width: 100%;
+            }
+
+            .text {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="image">
+            <img src="일론머스크.jpg" alt="Image 1">
+        </div>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis enim vitae est elementum euismod. Duis lobortis euismod nunc a dapibus. Proin nulla enim, adipiscing ac pharetra quis, vehicula a mauris. Maecenas nec tellus metus. Fusce sollicitudin, facilisis ac velit fringilla nisi molestie lobortis.
+            Suspense dapibus facilisis sempe. Duis ac purus facilisis, tincidunt felis eget, eleifend purus. Pellentesque ornare quam sit amet nulla hendrerit lacinia.
+            Praesent porta metus non faucibus iaculis. Pellentesque porta est vel felis faucibus finibus imperdiet. Aenean facilisis nulla a nisi imperdiet accumsan.
+            Donec venenatis, nisl in tempor malesuada, odio velit malesuada metus, non ultricies velit nulla in urna. Maecenas condimentum ex non lacus accumsan, vitae iaculis elit pharetra. Phasellus lorem quam, suscipit a congue vel, viverra eu nisi. Mauris ac felis lorem.</p>
+        </div>
+    </div>
+</body>
+</html>
